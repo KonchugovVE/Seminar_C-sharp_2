@@ -24,31 +24,26 @@ bool Check(int day)
 
 bool DayOff(int day)
 {
-    if (day>6)
+    if (day > 6)
     {
         return true;
-    
+
     }
     return false;
 }
-
-
-
-
-
 
 int day = Enter("\nВведите день недели:\n");
 
 if (Check(day))
 {
-if (DayOff(day))
-{
-    System.Console.WriteLine($"\n{day} день недели является выходным\n");
-    return;
+    if (DayOff(day))
+    {
+        System.Console.WriteLine($"\n{day} день недели является выходным\n");
+        return;
 
-}
-else
-{
-System.Console.WriteLine($"\n{day} день недели не является выходным\n");
-}
+    }
+    else
+    {
+        System.Console.WriteLine($"\n{day} день недели не является выходным\n");
+    }
 }
