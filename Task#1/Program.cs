@@ -2,6 +2,8 @@
 // 456 -> 5
 // 782 -> 8
 // 918 -> 1
+
+
 int Enter(string text)
 {
 System.Console.WriteLine(text);
@@ -12,11 +14,14 @@ return number;
 
 int num = Enter("Введите трехзначное число: ");
 
-if (num < 100 || num > 999)
+while (num < 100 || num > 999)
 {
     System.Console.WriteLine("Ввод не корректен ");
-    return;
+    num = Enter("Введите трехзначное число: ");
+    
 }
+
+
 
 int secondnum = num / 10 % 10;
 
