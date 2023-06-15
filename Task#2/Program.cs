@@ -13,21 +13,21 @@ int Enter(string text)
 
 bool CheckingTheNum(int num)
 {
-if (num < 100)
-{
-    System.Console.WriteLine($"В числе {num} третьей цифры нет");
-    return false;
-}
-return true;
+    if (num < 100)
+    {
+        System.Console.WriteLine($"В числе {num} третьей цифры нет");
+        return false;
+    }
+    return true;
 }
 
 int ThreeDigits(int num)
 {
-    while (num>999)
+    while (num > 999)
     {
         num /= 10;
     }
-    return num %10;
+    return num % 10;
 }
 
 
